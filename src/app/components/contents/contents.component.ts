@@ -11,22 +11,22 @@ export class ContentsComponent {
   contents = [
     {
       title: "Pesquisa",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, recusandae, repellendus vel distinctio nulla ut ipsam obcaecati perspiciatis quisquam, repellat animi debitis corrupti enim nisi amet ad iste? Quaerat, dolores!",
+      description: "Fomentamos a pesquisa científica e acadêmica, promovendo a atualização sistemática de dados e a divulgação por meio de periódicos.",
       linkText: "Saiba mais"
     },
     {
       title: "Extensão",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, recusandae, repellendus vel distinctio nulla ut ipsam obcaecati perspiciatis quisquam, repellat animi debitis corrupti enim nisi amet ad iste? Quaerat, dolores!",
+      description: "Promovemos a interação entre o Instituto e a comunidade, oferecendo cursos e atividades de extensão para compartilhar conhecimento e tecnologia.",
       linkText: "Saiba mais"
     },
     {
       title: "Inovação",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, recusandae, repellendus vel distinctio nulla ut ipsam obcaecati perspiciatis quisquam, repellat animi debitis corrupti enim nisi amet ad iste? Quaerat, dolores!",
+      description: "Incentivamos a pesquisa e a implementação de novas tecnologias, promovendo a inovação no Instituto e no mercado.",
       linkText: "Saiba mais"
     },
     {
       title: "Pós-Graduação",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, recusandae, repellendus vel distinctio nulla ut ipsam obcaecati perspiciatis quisquam, repellat animi debitis corrupti enim nisi amet ad iste? Quaerat, dolores!",
+      description: "Oferecemos cursos de pós-graduação para aprofundar conhecimentos e preparar profissionais para novos desafios no mercado.",
       linkText: "Saiba mais"
     }
   ];
