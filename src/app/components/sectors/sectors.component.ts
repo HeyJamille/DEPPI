@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Importe CommonModule
 
 @Component({
-  selector: 'app-contents',
+  selector: 'app-sectors',
   standalone: true,
-  templateUrl: './contents.component.html',
+  templateUrl: './sectors.component.html',
   imports: [CommonModule] 
 })
-export class ContentsComponent {
-  contents = [
+export class SectorsComponent {
+  sector = [
     {
       title: "Pesquisa",
       description: "Fomentamos a pesquisa científica e acadêmica, promovendo a atualização sistemática de dados e a divulgação por meio de periódicos.",
