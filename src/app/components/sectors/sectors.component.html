@@ -1,11 +1,11 @@
-<section class="p-6 lg:p-12 bg-[#f4f4f4]">
+<section id="sectores" class="p-6 lg:p-12 bg-[#f4f4f4]">
   <h1 class="text-center text-3xl lg:text-4xl font-extrabold text-gray-800 mb-12">Áreas de Atuação</h1>
   
   <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <div class="flex flex-col gap-4 p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300" *ngFor="let sector of sector">
       <h2 class="text-[#2f9335] text-2xl font-semibold">{{ sector.title }}</h2>
       <p class="text-gray-700 text-base"> {{ sector.description }}</p>
-      <a href="#" class="text-[#2f9335] border-b-2 w-[80px] border-[#2f9335] hover:text-[#1c6b2e] transition-colors duration-300">{{ sector.linkText }}</a>
+      <a href="#" class="text-[#2f9335] text-[16px] border-b-2 w-[80px] border-[#2f9335] hover:text-[#1c6b2e] transition-colors duration-300">{{ sector.linkText }}</a>
     </div>
   </section>
 </section>
