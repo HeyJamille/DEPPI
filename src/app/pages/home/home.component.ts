@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { SectorsComponent } from '../../components/sectors/sectors.component'; // Ajuste o caminho conforme necessário
 import { AboutComponent } from '../../components/about/about.component';
 import { GalleryComponent } from '../../components/gallery/gallery.component';
-import { ContactsComponent } from '../../contacts/contacts.component';
+import { ContactsComponent } from '../../components/contacts/contacts.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   standalone: true,
-  imports: [SectorsComponent, AboutComponent, GalleryComponent, ContactsComponent] // Importe diretamente aqui
+  imports: [SectorsComponent, AboutComponent, GalleryComponent, ContactsComponent] 
 })
 export class HomeComponent {
 }
