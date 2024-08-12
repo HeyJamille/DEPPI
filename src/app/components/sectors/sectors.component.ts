@@ -18,17 +18,17 @@ export class SectorsComponent {
     {
       title: "Extensão",
       description: "Promovemos a interação entre o Instituto e a comunidade, oferecendo cursos e atividades de extensão para compartilhar conhecimento e tecnologia.",
-      path: '/pesquisa'
+      path: '/extensao'
     },
     {
       title: "Inovação",
       description: "Incentivamos a pesquisa e a implementação de novas tecnologias, promovendo a inovação no Instituto e no mercado.",
-      path: '/pesquisa'
+      path: '/inovacao'
     },
     {
       title: "Pós-Graduação",
       description: "Oferecemos cursos de pós-graduação para aprofundar conhecimentos e preparar profissionais para novos desafios no mercado.",
-      path: '/pesquisa'
+      path: '/pos_graduacao'
     }
   ];
 
