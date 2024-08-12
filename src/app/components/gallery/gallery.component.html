@@ -1,0 +1,49 @@
+<article id="galery"  class="bg-[#f4f4f4] p-5 lg:p-10"> 
+  <section class="relative w-full max-w-4xl mx-auto overflow-hidden">
+    <h1 class="text-center text-3xl lg:text-4xl font-extrabold text-gray-800 mb-12">Galeria</h1>
+
+    <!-- Slides -->
+    <div 
+      class="relative flex transition-transform duration-500 ease-in-out "
+      [ngStyle]="{ transform: 'translateX(-' + (currentIndex * 100) + '%)' }"
+    >
+      <div *ngFor="let photo of photos; let i = index" class="w-full flex-shrink-0">
+        <img [src]="photo.image" alt="Photo" class="w-full h-[400px] object-cover rounded-lg" />
+      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-4">
+      <div *ngFor="let photo of photos; let i = index" 
+        (click)="currentIndex = i"
+        class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer transition-transform duration-300 "
+        [ngClass]="{'bg-gray-900 scale-125': currentIndex === i}">
+      </div>
+    </div>
+
+    <!-- Botão de Navegação Anterior -->
+    <button 
+      (click)="prevSlide()"
+      class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-gray-900 rounded-full p-3 shadow-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+      aria-label="Previous Slide"
+      >
+      <!-- Ícone SVG para a seta esquerda -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+
+    <!-- Botão de Navegação Próxima -->
+    <button 
+      (click)="nextSlide()"
+      class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-gray-900 rounded-full p-3 shadow-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+      aria-label="Next Slide"
+    >
+
+      <!-- Ícone SVG para a seta direita -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </section>
+</article>

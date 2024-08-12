@@ -1,0 +1,31 @@
+<header class="fixed top-0 left-0 w-full h-[96px] flex items-center justify-between p-4 border-b-2 border-gray-200 bg-white shadow-md lg:px-10 z-50">
+  <img src="assets/logo.png" alt="logo" class="h-12">
+
+  <!-- Botão do Menu Mobile -->
+  <button (click)="toggleMenu()" class="flex text-white cursor-pointer md:hidden focus:outline-none" aria-label="Menu">
+    <img *ngIf="isMenuOpen" src="assets/close.png" alt="Fechar menu" class="h-10 cursor-pointer">
+    <img *ngIf="!isMenuOpen" src="assets/open.png" alt="Abrir menu" class="h-10 cursor-pointer">
+  </button>
+
+  <!-- Mobile Menu -->
+  <section 
+    class="absolute flex flex-col justify-center items-center gap-3 p-5 w-full bg-white left-0 top-[80px] z-30 shadow-lg md:hidden transition-all duration-700 ease-in-out transform opacity-0 -translate-y-5"
+    [ngClass]="{'opacity-100 translate-y-0': isMenuOpen, 'opacity-0 -translate-y-5': !isMenuOpen}"
+    role="menu"
+  >
+    <a href="#about" (click)="closeMenu()" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300" role="menuitem">Sobre</a>
+    <a href="#sectores" (click)="closeMenu()" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300" role="menuitem">Setores</a>
+    <a href="#galery" (click)="closeMenu()" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300" role="menuitem">Galeria</a>
+    <a href="#contacts" (click)="closeMenu()" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300" role="menuitem">Contatos</a>
+  </section>
+
+  <!-- Desktop Menu -->
+  <section class="hidden md:flex flex-row gap-6 lg:gap-8 items-center">
+    <a href="#about" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300">Sobre</a>
+    <a href="#sectores" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300">Setores</a>
+    <a href="#galery" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300">Galeria</a>
+    <a href="#contacts" class="text-gray-800 hover:text-[#2f9335] cursor-pointer transition duration-300">Contatos</a>
+  </section>
+</header>
+
+
