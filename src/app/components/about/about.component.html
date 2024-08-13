@@ -1,11 +1,9 @@
-<section id="about" class="p-6 lg:p-12 bg-[#f4f4f4]">
+<section id="about" class="p-6 lg:p-12 bg-[#f4f4f4]" *ngIf="about">
   <div class="container mx-auto max-w-4xl">
-    <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">Sobre o DEPPI</h1>
+    <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ about.title }}</h1>
     
     <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-      <p class="text-lg text-gray-700">
-        O Departamento de Extensão, Pesquisa, Pós-Graduação e Inovação (DEPPI) tem como objetivo fomentar a pesquisa, extensão e as novas tecnologias, a busca da atualização sistemática de dados da Pesquisa e da Inovação Tecnológica, divulgando-as por meio de periódicos e incentivando a ética na pesquisa do Instituto, bem como promover a interface do IFCE, com empresas e entidades, para implantação de cursos e atividades da extensão na área de atuação do IFCE.
-      </p>
+      <p class="text-lg text-gray-700">{{ about.description }}</p>
     </div>
   </div>
 </section>

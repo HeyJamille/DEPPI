@@ -7,6 +7,7 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
   standalone: true,
   imports: [CommonModule]
 })
+
 export class HeaderComponent {
   isMenuOpen: boolean = false;
 
