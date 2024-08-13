@@ -1,9 +1,36 @@
-<div class="flex flex-col min-h-screen">
-    <app-header></app-header>
-
-    <main class="flex-grow mt-[200px]">
-        <h1>Extensao</h1>
-    </main>
-
-    <app-footer></app-footer>
-</div>
+<article class="flex flex-col min-h-screen">
+    <section class="flex flex-col mt-[100px] p-6 lg:px-12 bg-[#f4f4f4]" *ngIf="aboutExtensao">
+          <div class="container mx-auto max-w-4xl">
+              <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutExtensao.title }}</h1>
+              
+              <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+                  <p class="text-lg mb-2 text-gray-700">{{ aboutExtensao.paragraph }}</p>
+              </div>
+          </div>
+      </section>
+  
+      <section class="flex flex-col gap-10 p-6 lg:px-12 lg:flex-row bg-[#f4f4f4]">  
+          <div class="flex flex-col" *ngIf="aboutExtensao"> 
+              <div class="container mx-auto max-w-4xl">
+                  <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutGestor.title }}</h1>
+                  
+                  <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+                      <p class="text-lg mb-2 text-gray-700">{{ aboutGestor.paragraph }}</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="flex flex-col" *ngIf="aboutAtribGestor"> 
+              <div class="container mx-auto max-w-4xl">
+                  <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutAtribGestor.title }}</h1>
+                  
+                  <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+                      <p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph1 }}</p>
+                      <p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph2 }}</p>
+                      <p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph3 }}</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </article>
+  

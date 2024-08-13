@@ -11,6 +11,7 @@ export class GalleryComponent {
   photos = [
     { image: 'assets/image1.jpg' },
     { image: 'assets/image2.jpg' },
+    { image: 'assets/image3.jpg' },
   ];
 
   currentIndex = 0;
