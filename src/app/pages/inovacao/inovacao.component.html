@@ -1,9 +1,36 @@
-<div class="flex flex-col min-h-screen">
-    <app-header></app-header>
+<article class="flex flex-col">
+	<section class="flex flex-col mt-[100px] p-5 lg:px-10 bg-[#f4f4f4]" *ngIf="aboutInovacao">
+		<div class="container mx-auto max-w-4xl">
+			<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutInovacao.title }}</h1>
+			
+			<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+				<p class="text-lg mb-2 text-gray-700">{{ aboutInovacao.paragraph }}</p>
+			</div>
+		</div>	
+	</section>
 
-    <main class="flex-grow mt-[200px]">
-        <h1>Inovacao</h1>
-    </main>
+	<section class="flex flex-col gap-10 p-5 lg:px-10 bg-[#f4f4f4]">  
+		<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800  text-center">{{ aboutObjective.title }}</h1>
 
-    <app-footer></app-footer>
-</div>
+		<div class="flex flex-col gap-10 lg:flex-row" *ngIf="aboutObjective"> 
+			<div class="container mx-auto max-w-4xl">                  
+				<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph1 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph2 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph3 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph4 }}</p>
+				</div>
+			</div>
+
+			<div class="container mx-auto max-w-4xl" *ngIf="aboutObjective">                  
+				<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph5 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph6 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph7 }}</p>
+					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph8 }}</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+  

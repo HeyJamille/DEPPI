@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-pesquisa',
@@ -17,7 +17,7 @@ export class PesquisaComponent {
   aboutGestor = {
     title: 'Gestor de Pesquisa',
     paragraph1: 'Os gestores de pesquisa, pós-graduação e inovação coordenam essas atividades em seus campus junto com a equipe da PRPI.',
-    paragraph2:'A representação pode variar entre chefes de departamentos, diretores ou coordenadores de pesquisa, conforme a estrutura de cada campus.',
+    paragraph2:'A representação pode variar entre chefes de departamentos, diretores ou coordenadores de pesquisa, conforme a estrutura do campus.',
     paragraph3: 'Os gestores dos campi do IFCE promovem ações de pesquisa, pós-graduação e inovação e alinham-se às políticas da PRPI.',
   };
   aboutAtribGestor = {
@@ -26,4 +26,11 @@ export class PesquisaComponent {
     paragraph2: 'Organizar e estimular as ações de pesquisa e inovação no campus. ',
     paragraph3: 'Organizar eventos e reuniões de pesquisa e estimular a participação do IFCE em divulgação científica e comissões.',
   };
+
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  ngAfterViewInit() {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
 }
+  
