@@ -17,7 +17,7 @@ export class SectorsComponent {
     },
     {
       title: "Extensão",
-      description: "Promovemos a interação entre o Instituto e a comunidade, oferecendo cursos e atividades de extensão para compartilhar conhecimento e tecnologia.",
+      description: "Promovemos a interação entre o Instituto e a comunidade por meio de atividades de extensão que divulgam conhecimento e tecnologia.",
       path: '/extensao'
     },
     {

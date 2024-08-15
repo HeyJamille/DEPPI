@@ -14,13 +14,15 @@ export class ExtensaoComponent {
   };
   aboutGestor = {
     title: 'Gestor de Extensão',
-    paragraph: 'Gestores de extensão são os servidores, docentes ou técnicos administrativos, designados através de portaria, para coordenar todas as ações de extensão promovidas pelos campus em que atuam.',
+    paragraph1: 'Gestores de extensão são servidores, docentes ou técnicos administrativos designados por portaria para coordenar e supervisionar todas as ações de extensão realizadas pelos campi em que atuam.',
+    paragraph2: 'Eles são responsáveis por garantir a eficácia, a integração e o alinhamento dessas atividades com as diretrizes institucionais, promovendo a articulação entre a instituição e a comunidade.'
   };
   aboutAtribGestor = {
     title: 'Atribuições do Gestor',
     paragraph1: 'Disseminar o conhecimento sobre extensão.',
     paragraph2: 'Acompanhar as ações de extensão.',
-    paragraph3: 'Acompanhar o processo de certificação das ações, ainda que sejam assinados por eventuais parceiros externos.',
+    paragraph3: 'Acompanhar a certificação das ações, mesmo se assinadas por parceiros externos.',
+    paragraph4: 'Orientar os extensionistas na elaboração, execução e avaliação das ações.'
   };
 
   constructor(private viewportScroller: ViewportScroller) {}
