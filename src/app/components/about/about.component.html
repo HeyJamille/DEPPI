@@ -3,7 +3,7 @@
     <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ about.title }}</h1>
     
     <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-      <p class="text-lg text-gray-700">{{ about.description }}</p>
+      <p [innerHTML]="about.description" class="text-lg text-gray-700"></p>
     </div>
   </div>
 </section>

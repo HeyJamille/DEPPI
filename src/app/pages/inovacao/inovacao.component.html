@@ -4,7 +4,7 @@
 			<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutInovacao.title }}</h1>
 			
 			<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-				<p class="text-lg mb-2 text-gray-700">{{ aboutInovacao.paragraph }}</p>
+				<p [innerHTML]="aboutInovacao.paragraph" class="text-lg mb-2 text-gray-700"></p>
 			</div>
 		</div>	
 	</section>
@@ -15,19 +15,19 @@
 		<div class="flex flex-col gap-10 lg:flex-row" *ngIf="aboutObjective"> 
 			<div class="container mx-auto max-w-4xl">                  
 				<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph1 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph2 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph3 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph4 }}</p>
+					<p [innerHTML]="aboutObjective.paragraph1" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph2" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph3" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph4" class="text-lg mb-2 text-gray-700"></p>
 				</div>
 			</div>
 
 			<div class="container mx-auto max-w-4xl" *ngIf="aboutObjective">                  
 				<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph5 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph6 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph7 }}</p>
-					<p class="text-lg mb-2 text-gray-700">{{ aboutObjective.paragraph8 }}</p>
+					<p [innerHTML]="aboutObjective.paragraph5" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph6" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph7" class="text-lg mb-2 text-gray-700"></p>
+					<p [innerHTML]="aboutObjective.paragraph8" class="text-lg mb-2 text-gray-700"></p>
 				</div>
 			</div>
 		</div>

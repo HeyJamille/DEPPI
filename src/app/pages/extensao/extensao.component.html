@@ -4,7 +4,7 @@
 			<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutExtensao.title }}</h1>
 
 			<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-				<p class="text-lg mb-2 text-gray-700">{{ aboutExtensao.paragraph }}</p>
+				<p [innerHTML]="aboutExtensao.paragraph" class="text-lg mb-2 text-gray-700"></p>
 			</div>
 		</div>
 	</section>
@@ -14,7 +14,7 @@
 			<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutGestor.title }}</h1>
 
 			<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-				<p class="text-lg mb-2 text-gray-700">{{ aboutGestor.paragraph1 }}</p>
+				<p [innerHTML]="aboutGestor.paragraph1" class="text-lg mb-2 text-gray-700"></p>
 				<p class="text-lg mb-2 text-gray-700">{{ aboutGestor.paragraph2 }}</p>
 			</div>
 		</div>
@@ -23,10 +23,10 @@
 			<h1 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-6 text-center">{{ aboutAtribGestor.title }}</h1>
 
 			<div class="bg-white shadow-lg rounded-lg p-6 md:p-8 lg:p-12">
-				<p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph1 }}</p>
-				<p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph2 }}</p>
-				<p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph3 }}</p>
-				<p class="text-lg mb-2 text-gray-700">{{ aboutAtribGestor.paragraph4 }}</p>
+				<p [innerHTML]="aboutAtribGestor.paragraph1" class="text-lg mb-2 text-gray-700"></p>
+				<p [innerHTML]=" aboutAtribGestor.paragraph2" class="text-lg mb-2 text-gray-700"></p>
+				<p [innerHTML]="aboutAtribGestor.paragraph3" class="text-lg mb-2 text-gray-700"></p>
+				<p [innerHTML]="aboutAtribGestor.paragraph4" class="text-lg mb-2 text-gray-700"></p>
 			</div>
 		</div>
 	</section>
