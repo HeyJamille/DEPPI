@@ -19,8 +19,8 @@
             #name="ngModel"
           >
           <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-red-600 text-sm">
-            <div *ngIf="name.errors?.['required']">O nome é obrigatório.</div>
-            <div *ngIf="name.errors?.['minlength']">O nome deve ter pelo menos 2 caracteres.</div>
+            <div *ngIf="name.errors?.['required']" class="mt-0.5">O nome é obrigatório.</div>
+            <div *ngIf="name.errors?.['minlength']" class="mt-0.5">O nome deve ter pelo menos 2 caracteres.</div>
           </div>
         </div>
 
@@ -39,8 +39,8 @@
             #email="ngModel"
           >
           <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-red-600 text-sm">
-            <div *ngIf="email.errors?.['required']">O e-mail é obrigatório.</div>
-            <div *ngIf="email.errors?.['email']">O e-mail deve ser válido.</div>
+            <div *ngIf="email.errors?.['required']" class="mt-0.5">O e-mail é obrigatório.</div>
+            <div *ngIf="email.errors?.['email']" class="mt-0.5">O e-mail deve ser válido.</div>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
           rows="6" 
           required 
           aria-required="true"
-          class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2f9335] focus:border-transparent transition duration-300 resize-none"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2f9335] focus:border-transparent transition duration-300 resize-none"
           #message="ngModel"
         ></textarea>
         <div *ngIf="message.invalid && (message.dirty || message.touched)" class="text-red-600 text-sm">
