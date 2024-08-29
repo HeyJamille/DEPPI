@@ -19,8 +19,8 @@
             #name="ngModel"
           >
           <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-red-600 text-sm">
-            <div *ngIf="name.errors?.['required']" class="mt-0.5">O nome é obrigatório.</div>
-            <div *ngIf="name.errors?.['minlength']" class="mt-0.5">O nome deve ter pelo menos 2 caracteres.</div>
+            <div *ngIf="name.errors?.['required']" class="mt-1">O nome é obrigatório.</div>
+            <div *ngIf="name.errors?.['minlength']" class="mt-1">O nome deve ter pelo menos 2 caracteres.</div>
           </div>
         </div>
 
@@ -39,8 +39,8 @@
             #email="ngModel"
           >
           <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-red-600 text-sm">
-            <div *ngIf="email.errors?.['required']" class="mt-0.5">O e-mail é obrigatório.</div>
-            <div *ngIf="email.errors?.['email']" class="mt-0.5">O e-mail deve ser válido.</div>
+            <div *ngIf="email.errors?.['required']" class="mt-1">O e-mail é obrigatório.</div>
+            <div *ngIf="email.errors?.['email']" class="mt-1">O e-mail deve ser válido.</div>
           </div>
         </div>
       </div>
